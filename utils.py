@@ -41,8 +41,8 @@ def pull_tx_info(tx:str, token:Token):
 
     # import pdb; pdb.set_trace()
 
-    wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]"))) # For page to load complete
-
+    # wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]"))) # For page to load complete
+    time.sleep(20)
     entry1 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]').text
     entry2 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[2]').text
 
