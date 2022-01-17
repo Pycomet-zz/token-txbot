@@ -27,7 +27,7 @@ def run():
 
             if tx_ids in [False, []]:
                 print("failed")
-                time.sleep(10)
+                time.sleep(60)
                 pass
 
             else:
