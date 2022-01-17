@@ -12,25 +12,25 @@ from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 # # LOCAL SERVER WITH GECKODRIVER
-options = Options()
-options.headless = True
+# options = Options()
+# options.headless = True
 
-driver = webdriver.Firefox()
-wait = WebDriverWait(driver, 10000) # Huge amount of delay response
+# driver = webdriver.Firefox()
+# wait = WebDriverWait(driver, 10000) # Huge amount of delay response
 
 ##############
 
 
 # # SERVER PROCESSING WITH CHROME DRIVER (HEROKU)
-# options = webdriver.ChromeOptions()
+options = webdriver.ChromeOptions()
 
-# options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
-# options.add_argument("--headless")
-# options.add_argument("--no-sandbox")
-# options.add_argument("--disable-dev-sh-usage")
+options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-sh-usage")
 
-# driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
-# wait = WebDriverWait(driver, 10000) # Huge amount of delay response
+driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
+wait = WebDriverWait(driver, 10000) # Huge amount of delay response
 
 def pull_tx_info(tx:str, token:Token):
     "Fetch Data From EtherScan Website Page"
