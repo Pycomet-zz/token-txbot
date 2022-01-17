@@ -26,7 +26,7 @@ def run():
             tx_ids = client.fetch_tx()
 
             if tx_ids in [False, []]:
-                print("failed")
+                print(f"{tx_ids}failed")
                 time.sleep(60)
                 pass
 

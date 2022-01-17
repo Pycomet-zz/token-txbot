@@ -30,7 +30,9 @@ class APISource:
 
     def fetch_tx(self):
         "Initialize Web3 Connection"
+        # import pdb; pdb.set_trace()
         web3 = Web3(Web3.HTTPProvider(NODE_PROVIDER))
+
         if web3.isConnected() == True:
 
             #fetch addr transaction
@@ -38,15 +40,16 @@ class APISource:
             addr = Web3.toChecksumAddress(self.address)
 
             token_contract = web3.eth.contract(address=addr, abi=self.abi) 
-            filter = token_contract.events.Transfer.createFilter(fromBlock='latest')
+            
             while True:
+                filter = token_contract.events.Transfer.createFilter(fromBlock='latest')
 
                 txs = filter.get_new_entries()
                 if len(txs) > 0:
                     return [txs[i]['transactionHash'] for i in range(len(txs))]
                 else:
                     print(txs)
-                    time.sleep(10)
+                    time.sleep(120)
                     continue
 
 
