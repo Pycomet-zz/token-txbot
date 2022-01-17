@@ -11,6 +11,10 @@
     ],
     "tokens": [
         {
+            "symbol": "OHM",
+            "address": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5"
+        },
+        {
             "symbol": "SHIBAKEN",
             "address": "0xa4cf2afd3b165975afffbf7e487cdd40c894ab6b"
         },
