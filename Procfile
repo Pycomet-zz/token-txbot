@@ -1,1 +1,3 @@
-web: python3 main.py --log-file -
+web: python main.py --log-file -
+
+worker: python bot.py --log-file -

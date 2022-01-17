@@ -9,7 +9,7 @@ from utils import *
 def run():
     "Start Everything"
 
-    file = open(f"{cwd}/source.json")
+    file = open(f"{cwd}/sources.json")
     data = json.load(file)
 
     # pull channels
@@ -22,12 +22,12 @@ def run():
     status = client.fetch_contract(token['address'])
 
     if status == "Done":
-
         while True:
             tx_ids = client.fetch_tx()
 
             if tx_ids in [False, []]:
                 print("failed")
+                time.sleep(10)
                 pass
 
             else:
