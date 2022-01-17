@@ -7,3 +7,9 @@ class User:
     id: int = 0
     language: str = "en"
 
+@dataclass
+class Token:
+    symbol: str
+    address: str
+
+    

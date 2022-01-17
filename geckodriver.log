@@ -1,0 +1,175 @@
+1642375012326	geckodriver	INFO	Listening on 127.0.0.1:63892
+1642375386579	geckodriver	INFO	Listening on 127.0.0.1:50087
+1642375387091	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "50088" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileJzbNks"
+1642375387510	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileJzbNks/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:50088/devtools/browser/7e570ff6-dce1-4b6c-9939-d43d67570bb1
+1642375389324	Marionette	INFO	Listening on port 50094
+1642375389383	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://etherscan.io/, line 707: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://etherscan.io"
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 335))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:335:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:733:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:242:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:650:12
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://etherscan.io"
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 335))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:335:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:733:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:242:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:650:12
+
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 335))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:335:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:733:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:242:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:650:12
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://etherscan.io"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://etherscan.io"
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 335))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:335:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:733:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:242:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:650:12
+
+JavaScript error: https://cdn.coinzilla.com/base/728x90/index.html, line 147: TypeError: this.a is null
+console.error: (new TypeError("browsingContext is null", "resource://devtools/server/actors/watcher/target-helpers/frame-helper.js", 182))
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+1642377406707	geckodriver	INFO	Listening on 127.0.0.1:60514
+1642377407222	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "60515" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileNHJKyc"
+1642377407804	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileNHJKyc/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:60515/devtools/browser/3b44cd47-fe36-4a9f-a852-5564826a6f19
+1642377409889	Marionette	INFO	Listening on port 60524
+1642377409975	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+SourceActor threw an exception: Error: Failed to fetch https://etherscan.io/tx/0x326ca6bb2ba35f5b030c32fc3020a348681a12846dec188eb79749a7ee877de5. Code 2152398862.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://etherscan.io/tx/0x326ca6bb2ba35f5b030c32fc3020a348681a12846dec188eb79749a7ee877de5. Code 2152398862.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://etherscan.io/tx/0x326ca6bb2ba35f5b030c32fc3020a348681a12846dec188eb79749a7ee877de5. Code 2152398862.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://etherscan.io"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://etherscan.io"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://etherscan.io"
+console.error: (new TypeError("browsingContext is null", "resource://devtools/server/actors/watcher/target-helpers/frame-helper.js", 182))
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1642380766205	geckodriver	INFO	Listening on 127.0.0.1:61300
+1642380766211	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "61301" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofile2VoCkP"
+1642380766670	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofile2VoCkP/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:61301/devtools/browser/e0cbaaa3-0fb0-496e-8d3e-8665c513f03e
+1642380767645	Marionette	INFO	Listening on port 61304
+1642380767672	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1642381038246	geckodriver	INFO	Listening on 127.0.0.1:62963
+1642381038251	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "62964" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileB7F1Mz"
+1642381038682	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileB7F1Mz/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:62964/devtools/browser/2a1eceef-eff8-4488-abfe-f3d8aada7d97
+1642381040140	Marionette	INFO	Listening on port 62967
+1642381040239	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1642381296721	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1642381568739	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+SourceActor threw an exception: Error: Failed to fetch https://etherscan.io/tx/0x326ca6bb2ba35f5b030c32fc3020a348681a12846dec188eb79749a7ee877de5. Code 2152398862.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://etherscan.io/tx/0x326ca6bb2ba35f5b030c32fc3020a348681a12846dec188eb79749a7ee877de5. Code 2152398862.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://etherscan.io/tx/0x326ca6bb2ba35f5b030c32fc3020a348681a12846dec188eb79749a7ee877de5. Code 2152398862.
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 335))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:335:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:733:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:242:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:650:12
+
+1642382845110	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'interactive'.
+console.error: (new InvalidStateError("JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment", (void 0), 335))
+InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment: _createTargetActor/<@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:335:12
+newListener@resource://devtools/shared/event-emitter.js:173:27
+_emit@resource://devtools/shared/event-emitter.js:244:34
+emit@resource://devtools/shared/event-emitter.js:190:18
+emit@resource://devtools/shared/event-emitter.js:342:18
+destroy@resource://devtools/server/actors/targets/window-global.js:733:10
+module.exports/proto.destroy@resource://devtools/server/actors/targets/target-actor-mixin.js:242:30
+instantiate@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:242:26
+handleEvent@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:650:12
+
+console.error: (new TypeError("browsingContext is null", "resource://devtools/server/actors/watcher/target-helpers/frame-helper.js", 182))
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+JavaScript error: resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm, line 380: Error: Trying to destroy a target actor that doesn't exists, or has already been destroyed. Watcher Actor ID:server0.conn0.watcher2
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1642410781228	geckodriver	INFO	Listening on 127.0.0.1:59187
+1642410781741	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "59188" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofiles6EIj2"
+1642410783128	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofiles6EIj2/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:59188/devtools/browser/fa3c6bbb-f61d-477d-a1c0-ee0e6276ca52
+1642410785550	Marionette	INFO	Listening on port 59193
+1642410785633	RemoteAgent	WARN	TLS certificate errors will be ignored for this session

@@ -1,0 +1,18 @@
+{
+    "channels": [
+        {
+            "Group Name": "Test Account",
+            "Group Id": "kisezone"
+        },
+        {
+            "Group Name": "Test Channel",
+            "Group Id": "grrp4"
+        }
+    ],
+    "tokens": [
+        {
+            "symbol": "HEX",
+            "address": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"
+        }
+    ]
+}

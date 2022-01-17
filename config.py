@@ -1,6 +1,8 @@
 import logging
 import os
 import re
+import json
+from web3 import Web3
 from flask import Flask, request
 from datetime import date
 import telegram
@@ -28,8 +30,16 @@ logging.basicConfig(
 
 TOKEN = os.getenv('TOKEN')
 
+cwd = os.getcwd()
+
 DEBUG = True
 SERVER_URL = os.getenv("SERVER_URL")
 
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
+
+WEB3_API_KEY = os.getenv("WEB3_API_KEY")
+
+TEST_ABI = os.getenv("TEST_ABI")
+
+NODE_PROVIDER = os.getenv("NODE_PROVIDER")
