@@ -1,0 +1,10 @@
+requests
+
+[PIL]
+Pillow
+
+[json]
+ujson
+
+[redis]
+redis>=3.4.1
