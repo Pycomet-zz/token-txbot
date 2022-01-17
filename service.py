@@ -44,7 +44,7 @@ class APISource:
 
                 txs = filter.get_new_entries()
                 if len(txs) > 0:
-                    return [txs[i]['transactionHash'] for i in txs]
+                    return [txs[i]['transactionHash'] for i in len(txs)]
                 else:
                     print(txs)
                     time.sleep(10)
