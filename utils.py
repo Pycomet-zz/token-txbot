@@ -13,7 +13,7 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 # # LOCAL SERVER WITH GECKODRIVER
 options = Options()
-# options.headless = True
+options.headless = True
 
 driver = webdriver.Firefox()
 wait = WebDriverWait(driver, 10000) # Huge amount of delay response
