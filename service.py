@@ -38,9 +38,8 @@ class APISource:
             addr = Web3.toChecksumAddress(self.address)
 
             token_contract = web3.eth.contract(address=addr, abi=self.abi) 
-            
+            filter = token_contract.events.Transfer.createFilter(fromBlock='latest')
             while True:
-                filter = token_contract.events.Transfer.createFilter(fromBlock='latest')
 
                 txs = filter.get_new_entries()
                 if len(txs) > 0:
