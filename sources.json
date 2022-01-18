@@ -1,12 +1,8 @@
 {
     "channels": [
         {
-            "Group Name": "Test Account",
-            "Group Id": "@kisezone"
-        },
-        {
             "Group Name": "Test Channel",
-            "Group Id": "@grrp4"
+            "Group Id": "-1001229308480"
         }
     ],
     "tokens": [

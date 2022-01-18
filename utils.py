@@ -55,7 +55,7 @@ def load_driver():
 # driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
 # wait = WebDriverWait(driver, 10000) # Huge amount of delay response
 
-def pull_tx_info(tx:any, token:Token):
+def pull_tx_info(tx, token:Token):
     "Fetch Data From EtherScan Website Page"
     driver = load_driver()
     wait = WebDriverWait(driver, 100) # Huge amount of delay response
@@ -63,15 +63,20 @@ def pull_tx_info(tx:any, token:Token):
     print("Fetching Transaction Data ...")
 
     
+    tx = tx.hex()
     print(tx)
     driver.get(f"https://etherscan.io/tx/{tx}")
 
 
-    # wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]"))) # For page to load complete
-    time.sleep(20)
-    entry1 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]').text
-    entry2 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[2]').text
+    wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="spanTxHash"]'))) # For page to load complete
+    # time.sleep(20)
 
+    try:
+        entry1 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]').text
+
+        entry2 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[2]').text
+    except Exception as e:
+        pass
     tx1_coin = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[1]/div/span[6]/span').text
     
     dummy_text = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[1]/div').text
@@ -85,7 +90,7 @@ def pull_tx_info(tx:any, token:Token):
 
     if entry1 == token.symbol:
         trade = "SELL"
-    elif entry2 == token.symbol:
+    else:
         trade = "BUY"
 
     if tx1_symbol == entry1:

@@ -35,17 +35,19 @@ def run():
                     data = client.fetch_tx_info(tx)
 
                     for group in channels:
-                        bot.send_message(
-                            group['Group Id'],
-                            f"""
-                        {client.symbol} {data['trade']} !
 
-                        Spent: {data['spent']}
-                        Got: {data['got']}
-                        Buyer Position: {data['position']}
-                        Price: {data['fee']}
-                        MCap: {data['market-cap']}
-                        TX | Dex            
+                        # import pdb; pdb.set_trace()
+                        bot.send_message(
+                            int(group['Group Id']),
+                            f"""
+{client.symbol} {data['trade']} !
+🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢
+Spent: {data['spent']}
+Got: {data['got']}
+Buyer Position: {data['position']}
+Price: {data['fee']}
+MCap: {data['market-cap']}
+TX | Dex            
                             """
                         )
 
