@@ -564,3 +564,221 @@ console.error: BackgroundUpdate:
 DevTools listening on ws://localhost:59071/devtools/browser/d1ac70d3-c0e5-49d0-ad3e-b1d49ab6a320
 1642464085584	Marionette	INFO	Listening on port 59080
 1642464085667	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642501044899	geckodriver	INFO	Listening on 127.0.0.1:54307
+1642501045421	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "54308" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileo0Iubv"
+1642501045962	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileo0Iubv/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:54308/devtools/browser/201ab4a5-d9a2-4432-b01b-c28a9d715a2c
+1642501047486	Marionette	INFO	Listening on port 54317
+1642501047521	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642501918587	geckodriver	INFO	Listening on 127.0.0.1:58130
+1642501919112	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "58131" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofile1ViouN"
+1642501919557	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofile1ViouN/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:58131/devtools/browser/ca8c3f83-1a3e-4378-a91a-ea5c913e0a88
+1642501920784	Marionette	INFO	Listening on port 58140
+1642501920848	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502297866	geckodriver	INFO	Listening on 127.0.0.1:59869
+1642502298380	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "59870" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilerKIGOh"
+1642502298987	Marionette	INFO	Marionette enabled
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilerKIGOh/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:59870/devtools/browser/b8995408-bfd5-47ca-b362-c32766ccd6c6
+1642502300427	Marionette	INFO	Listening on port 59879
+1642502300479	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502737345	Marionette	INFO	Stopped listening on port 54317
+1642502741832	Marionette	INFO	Stopped listening on port 59080
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1642502744353	Marionette	INFO	Stopped listening on port 58140
+1642502746613	Marionette	INFO	Stopped listening on port 59879
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1642502750932	geckodriver	INFO	Listening on 127.0.0.1:61963
+1642502751462	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "61964" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileiwmsbh"
+*** You are running in headless mode.
+1642502751763	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileiwmsbh/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:61964/devtools/browser/359fe276-34f5-4c10-b612-9b779cff0e4a
+1642502752810	Marionette	INFO	Listening on port 61969
+1642502752821	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502758735	geckodriver	INFO	Listening on 127.0.0.1:62054
+1642502759259	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "62055" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileSPNOSO"
+*** You are running in headless mode.
+1642502759601	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileSPNOSO/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:62055/devtools/browser/acee86fd-1b62-48a2-b55a-3a7c0c1f5434
+1642502760658	Marionette	INFO	Listening on port 62064
+1642502760732	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502762810	geckodriver	INFO	Listening on 127.0.0.1:62122
+1642502763326	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "62123" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileNmZ3I0"
+*** You are running in headless mode.
+1642502763572	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileNmZ3I0/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:62123/devtools/browser/d3ad3836-4823-492a-8b72-b78f4bb56963
+1642502764578	Marionette	INFO	Listening on port 62133
+1642502764592	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502769779	geckodriver	INFO	Listening on 127.0.0.1:62220
+1642502770297	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "62221" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilewX2vJT"
+*** You are running in headless mode.
+1642502770613	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilewX2vJT/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:62221/devtools/browser/b4099d82-d64d-475e-97a8-129a9fe3ee2a
+1642502771534	Marionette	INFO	Listening on port 62230
+1642502771552	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502824766	geckodriver	INFO	Listening on 127.0.0.1:62524
+1642502825285	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "62525" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilepPnkch"
+*** You are running in headless mode.
+1642502825680	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilepPnkch/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:62525/devtools/browser/00797a65-3037-4016-b1be-3a70f2d6260c
+1642502826781	Marionette	INFO	Listening on port 62534
+1642502826849	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502832278	geckodriver	INFO	Listening on 127.0.0.1:62622
+1642502832811	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "62623" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileKWsmbO"
+*** You are running in headless mode.
+1642502833768	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileKWsmbO/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:62623/devtools/browser/739c4a3f-e313-47ea-a6b2-a4927cb77910
+1642502835403	Marionette	INFO	Listening on port 62628
+1642502835495	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502840158	geckodriver	INFO	Listening on 127.0.0.1:62719
+1642502840674	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "62720" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileDlOuJi"
+*** You are running in headless mode.
+1642502841059	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileDlOuJi/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:62720/devtools/browser/9258ffb7-e910-4afb-99e3-05136f294374
+1642502842120	Marionette	INFO	Listening on port 62729
+1642502842133	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502968477	geckodriver	INFO	Listening on 127.0.0.1:63351
+1642502969006	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "63352" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilevAkTHg"
+*** You are running in headless mode.
+1642502969431	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilevAkTHg/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:63352/devtools/browser/61d28c5d-99ae-468f-9dd9-a24995f77d28
+1642502970570	Marionette	INFO	Listening on port 63361
+1642502970677	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502975213	geckodriver	INFO	Listening on 127.0.0.1:63445
+1642502975249	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "63446" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileoGJcDG"
+*** You are running in headless mode.
+1642502976064	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileoGJcDG/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:63446/devtools/browser/44c9f8c9-52b9-4f28-8c4b-2be6615ac6ac
+1642502978166	Marionette	INFO	Listening on port 63449
+1642502978223	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502981536	geckodriver	INFO	Listening on 127.0.0.1:63544
+1642502982054	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "63545" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilextWiMf"
+*** You are running in headless mode.
+1642502982387	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilextWiMf/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:63545/devtools/browser/0310cf3b-62ff-4279-b81e-8a6d9f1bd603
+1642502983587	Marionette	INFO	Listening on port 63557
+1642502983619	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642502987092	geckodriver	INFO	Listening on 127.0.0.1:63625
+1642502987610	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "63626" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileKHvOvy"
+*** You are running in headless mode.
+1642502987909	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileKHvOvy/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:63626/devtools/browser/93ad03bb-790d-4093-918d-f4b1c44f9a95
+1642502989058	Marionette	INFO	Listening on port 63633
+1642502989084	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642503969786	geckodriver	INFO	Listening on 127.0.0.1:51868
+1642503970310	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "51869" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofile2cTl3R"
+*** You are running in headless mode.
+1642503970765	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofile2cTl3R/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:51869/devtools/browser/2218827c-9ccb-4549-95a2-133c11be8c18
+1642503971848	Marionette	INFO	Listening on port 51874
+1642503971881	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642503977624	geckodriver	INFO	Listening on 127.0.0.1:51965
+1642503978133	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "51966" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileh9fG7B"
+*** You are running in headless mode.
+1642503978456	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileh9fG7B/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:51966/devtools/browser/f598fd0f-1a3c-4e2b-ab81-1a674c5383b8
+1642503979556	Marionette	INFO	Listening on port 51975
+1642503979605	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642503982741	geckodriver	INFO	Listening on 127.0.0.1:52051
+1642503983258	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "52052" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilejoh0ef"
+*** You are running in headless mode.
+1642503983512	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofilejoh0ef/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:52052/devtools/browser/90a4ce3d-4461-411d-b861-46c2f5ff63c5
+1642503984621	Marionette	INFO	Listening on port 52059
+1642503984722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1642503990693	geckodriver	INFO	Listening on 127.0.0.1:52163
+1642503991210	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-headless" "--remote-debugging-port" "52164" "-foreground" "-no-remote" "-profile" "/var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileBa4Knh"
+*** You are running in headless mode.
+1642503991552	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/21/n8yrtjdj267gc13zsmd1v1sr0000gn/T/rust_mozprofileBa4Knh/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 243"  data: no]
+DevTools listening on ws://localhost:52164/devtools/browser/a90d04ac-5337-4e00-8d2f-7101aea4312d
+1642503992742	Marionette	INFO	Listening on port 52174
+1642503992776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

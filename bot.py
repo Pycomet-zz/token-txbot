@@ -35,21 +35,41 @@ def run():
                     data = client.fetch_tx_info(tx)
 
                     for group in channels:
+                        
+                        if data is not None:
+                            # import pdb; pdb.set_trace()
 
-                        # import pdb; pdb.set_trace()
-                        bot.send_message(
-                            int(group['Group Id']),
-                            f"""
-{client.symbol} {data['trade']} !
-🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢
-Spent: {data['spent']}
-Got: {data['got']}
-Buyer Position: {data['position']}
-Price: {data['fee']}
-MCap: {data['market-cap']}
-TX | Dex            
-                            """
-                        )
+                            if data['trade'] == "BUY":
+
+                                bot.send_message(
+                                    int(group['Group Id']),
+                                    f"""
+    {client.symbol} {data['trade']} !
+    🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢
+    Spent: {data['spent']}
+    Got: {data['got']}
+    Buyer Position: {data['position']}
+    Price: {data['fee']}
+    MCap: {data['market-cap']}
+    TX | Dex            
+                                    """
+                                )
+
+                            else:
+
+                                bot.send_message(
+                                    int(group['Group Id']),
+                                    f"""
+    {client.symbol} {data['trade']} !
+    🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴🔴
+    Spent: {data['spent']}
+    Got: {data['got']}
+    Seller Position: {data['position']}
+    Price: {data['fee']}
+    MCap: {data['market-cap']}
+    TX | Dex            
+                                    """
+                                )
 
 
 

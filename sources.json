@@ -1,15 +1,15 @@
 {
     "channels": [
         {
+            "Group Name": "Shibaken",
+            "Group Id": "-1001558617536"
+        },
+        {
             "Group Name": "Test Channel",
             "Group Id": "-1001229308480"
         }
     ],
     "tokens": [
-        {
-            "symbol": "OHM",
-            "address": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5"
-        },
         {
             "symbol": "SHIBAKEN",
             "address": "0xa4cf2afd3b165975afffbf7e487cdd40c894ab6b"
@@ -17,6 +17,10 @@
         {
             "symbol": "HEX",
             "address": "0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"
+        },
+        {
+            "symbol": "OHM",
+            "address": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5"
         }
     ]
 }

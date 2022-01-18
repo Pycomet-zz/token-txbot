@@ -18,7 +18,7 @@ def load_driver():
         options = Options()
         options.headless = True
 
-        driver = webdriver.Firefox()
+        driver = webdriver.Firefox(options=options)
 
 
     else:
@@ -82,48 +82,48 @@ def pull_tx_info(tx, token:Token):
 
     try:
         entry1 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]').text
-
-        entry2 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[2]').text
-    except Exception as e:
-        pass
-    tx1_coin = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[1]/div/span[6]/span').text
     
-    dummy_text = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[1]/div').text
-    tx1_usd = dummy_text.split('(')[1].split(')')[0]
-    tx1_symbol = dummy_text.split('(')[2].split(')')[0]
+        tx1_coin = driver.find_element_by_xpath('//*[@id="wrapperContent"]/li[1]/div/span[6]/span').text
+        dummy_text = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[1]/div').text
+        tx1_usd = dummy_text.split('(')[1].split(')')[0]
+        tx1_symbol = dummy_text.split('(')[2].split(')')[0]
 
-    tx2_coin = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[2]/div/span[6]/span').text
-    dummy_text = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[2]/div').text
-    tx2_usd = dummy_text.split('(')[1].split(')')[0]
-    tx2_symbol = dummy_text.split('(')[2].split(')')[0]
+        tx2_coin = driver.find_element_by_xpath('//*[@id="wrapperContent"]/li[2]/div/span[6]/span').text
+        dummy_text = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[8]/div[2]/ul/li[2]/div').text
+        tx2_usd = dummy_text.split('(')[1].split(')')[0]
+        tx2_symbol = dummy_text.split('(')[2].split(')')[0]
 
-    if entry1 == token.symbol:
-        trade = "SELL"
-    else:
-        trade = "BUY"
+        if entry1 == token.symbol:
+            trade = "SELL"
+        else:
+            trade = "BUY"
 
-    if tx1_symbol == entry1:
+        if tx1_symbol == entry1:
 
-        spent = f"{tx1_coin} {tx1_symbol} ({tx1_usd})"
-        got = f"{tx2_coin} {tx2_symbol}"
+            spent = f"{tx1_coin} {tx1_symbol} ({tx1_usd})"
+            got = f"{tx2_coin} {tx2_symbol}"
 
-    else:
-        spent = f"{tx2_coin} {tx2_symbol} ({tx2_usd})"
-        got = f"{tx1_coin} {tx1_symbol}"
+        else:
+            spent = f"{tx2_coin} {tx2_symbol} ({tx2_usd})"
+            got = f"{tx1_coin} {tx1_symbol}"
 
-    fee = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[10]/div/div[2]/span/span').text
+        fee = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[10]/div/div[2]/span/span').text
 
 
-    # TRADE / SPENT / GOT / POSITION / FEE / MCAP
+        # TRADE / SPENT / GOT / POSITION / FEE / MCAP
 
-    response = {
-        "trade": trade,
-        "spent": spent,
-        "got": got,
-        "fee": fee,
-        "position": "New",
-        "market-cap": ""
-    }
-    print(response)
+        response = {
+            "trade": trade,
+            "spent": spent,
+            "got": got,
+            "fee": fee,
+            "position": "New",
+            "market-cap": ""
+        }
+        print(response)
 
-    return response
+        return response
+
+    except Exception as e:
+        print(e)
+        return None
