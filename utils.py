@@ -22,22 +22,31 @@ def load_driver():
 
 
     else:
-        options = webdriver.FirefoxOptions()
-        # enable trace level for debugging 
-        options.log.level = "trace"
+        # # SERVER PROCESSING WITH CHROME DRIVER (HEROKU)
+        options = webdriver.ChromeOptions()
 
-        options.add_argument("-remote-debugging-port=9224")
-        options.add_argument("-headless")
-        options.add_argument("-disable-gpu")
-        options.add_argument("-no-sandbox")
+        options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+        options.add_argument("--headless")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-sh-usage")
 
-        binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+        driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=options)
+        # options = webdriver.FirefoxOptions()
+        # # enable trace level for debugging 
+        # options.log.level = "trace"
 
-        driver = webdriver.Firefox(
-            firefox_binary=binary,
-            executable_path=os.environ.get('GECKODRIVER_PATH'),
-            options=options
-        )
+        # options.add_argument("-remote-debugging-port=9224")
+        # options.add_argument("-headless")
+        # options.add_argument("-disable-gpu")
+        # options.add_argument("-no-sandbox")
+
+        # binary = FirefoxBinary(os.environ.get('FIREFOX_BIN'))
+
+        # driver = webdriver.Firefox(
+        #     firefox_binary=binary,
+        #     executable_path=os.environ.get('GECKODRIVER_PATH'),
+        #     options=options
+        # )
 
     return driver
 
