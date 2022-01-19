@@ -70,15 +70,13 @@ def pull_tx_info(tx, token:Token):
     wait = WebDriverWait(driver, 100) # Huge amount of delay response
 
     print("Fetching Transaction Data ...")
-
     
     tx = tx.hex()
     print(tx)
     driver.get(f"https://etherscan.io/tx/{tx}")
 
-
-    wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="spanTxHash"]'))) # For page to load complete
-    # time.sleep(20)
+    # wait.until(EC.presence_of_element_located((By.XPATH, '//*[@id="spanTxHash"]'))) # For page to load complete
+    time.sleep(25)
 
     try:
         entry1 = driver.find_element_by_xpath('/html/body/div[1]/main/div[3]/div[1]/div[2]/div[1]/div/div[5]/div[2]/ul/li/div/a[1]').text
