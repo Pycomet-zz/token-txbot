@@ -44,7 +44,7 @@ class APISource:
             self.token_contract = self.web3.eth.contract(address=addr, abi=self.abi) 
             
             while True:
-                filter = self.token_contract.events.Transfer.createFilter(fromBlock='latest')
+                filter = self.token_contract.events.Transfer().createFilter(fromBlock='latest')
 
                 txs = filter.get_new_entries()
                 # import pdb; pdb.set_trace()
@@ -52,7 +52,7 @@ class APISource:
                     return [txs[i]['transactionHash'] for i in range(len(txs))]
                 else:
                     print(txs)
-                    time.sleep(60)
+                    time.sleep(120)
                     continue
 
 
