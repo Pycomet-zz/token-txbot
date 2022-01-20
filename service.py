@@ -111,6 +111,9 @@ class APISource:
         except IndexError:
             return None
 
+        print(input_log)
+        print(output_log)
+        
         # Inptu value and Token
         price_per_eth, input_symbol = self.get_token(
             address=input_log['args']['address']

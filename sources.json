@@ -11,6 +11,10 @@
     ],
     "tokens": [
         {
+            "symbol": "",
+            "address": "0x97b65710d03e12775189f0d113202cc1443b0aa2"
+        },
+        {
             "symbol": "OHM",
             "address": "0x64aa3364f17a4d01c6f1751fd97c2bd3d7e7f1d5"
         }
