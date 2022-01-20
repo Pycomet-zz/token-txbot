@@ -52,7 +52,7 @@ class APISource:
                     return [txs[i]['transactionHash'] for i in range(len(txs))]
                 else:
                     print(txs)
-                    time.sleep(20)
+                    time.sleep(60)
                     continue
 
 
