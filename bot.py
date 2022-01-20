@@ -32,7 +32,7 @@ def run():
 
             else:
                 for tx in tx_ids:
-                    data = client.fetch_tx_info(tx)
+                    data = client.fetch_data(tx)
 
                     for group in channels:
                         
