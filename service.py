@@ -109,11 +109,11 @@ class APISource:
 
         if output_log == {} and input_log != {}:
             output_log['address'] = self.address
-            output_log['args']['value'] = input_log['args']['value']
+            output_log['args']['value'] = input_log['args']['tokens']
 
         elif output_log != {} and input_log == {}:
             input_log['address'] = self.address
-            input_log['args']['value'] = output_log['args']['value']          
+            input_log['args']['value'] = output_log['args']['tokens']          
 
         elif output_log == {} or input_log == {}:
             return None
@@ -124,7 +124,7 @@ class APISource:
             price_per_eth, input_symbol = self.get_token(
                 address=input_log['address']
             )
-            spent_val =  float(input_log['args']['value']) / float(price_per_eth)
+            spent_val =  float(input_log['args']['tokens']) / float(price_per_eth)
             spent = f"{spent_val} {input_symbol}"
 
             if input_symbol == self.symbol:
@@ -134,7 +134,7 @@ class APISource:
 
 
             price_per_unit, output_symbol = self.get_token(output_log['address'])
-            got_value = float(output_log['args']['value']) / float(price_per_unit)
+            got_value = float(output_log['args']['tokens']) / float(price_per_unit)
             got = f"{got_value} {output_symbol}"
 
             fee_wei = tx_data['gasUsed'] * tx_data['effectiveGasPrice']
