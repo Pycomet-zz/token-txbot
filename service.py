@@ -86,63 +86,70 @@ class APISource:
         tx_data =  self.web3.eth.get_transaction_receipt(tx)
         tx_logs = self.token_contract.events.Transfer().processReceipt(tx_data)
 
+        input_log = {}
+        output_log = {}
 
         try:
             # Get Input And Output Logs
             for log in tx_logs:
-                index = tx_logs.index(log)
+                # index = tx_logs.index(log) + 1
                 if tx_data['from'] == log['args']['from']:
                     input_log = log
-                    if index == 0:
-                        index += 1
-                    else:
-                        index -= 1
-                    output_log = tx_logs[index]
 
                 elif tx_data['from'] == log['args']['to']:
                     output_log = log
-                    if index == 0:
-                        index += 1
-                    else:
-                        index -= 1
-                    input_log = tx_logs[index]
                 else:
-                    return None
-        except IndexError:
+                    pass
+        except Exception as e:
+            print(e)
             return None
 
         print(input_log)
         print(output_log)
-        
-        # Inptu value and Token
-        price_per_eth, input_symbol = self.get_token(
-            address=input_log['args']['address']
-        )
-        spent_val =  float(input_log['args']['value']) / float(price_per_eth)
-        spent = f"{spent_val} {input_symbol}"
 
-        if input_symbol == self.symbol:
-            trade = "SELL"
+        if output_log == {} and input_log != {}:
+            output_log['address'] = self.address
+            output_log['args']['value'] = input_log['args']['value']
+
+        elif output_log != {} and input_log == {}:
+            input_log['address'] = self.address
+            input_log['args']['value'] = output_log['args']['value']          
+
+        elif output_log == {} or input_log == {}:
+            return None
+
         else:
-            trade = "BUY"
+
+            # Inptu value and Token
+            price_per_eth, input_symbol = self.get_token(
+                address=input_log['address']
+            )
+            spent_val =  float(input_log['args']['value']) / float(price_per_eth)
+            spent = f"{spent_val} {input_symbol}"
+
+            if input_symbol == self.symbol:
+                trade = "SELL"
+            else:
+                trade = "BUY"
 
 
-        price_per_unit, output_symbol = self.get_token(output_log['args']['address'])
-        got_value = float(output_log['args']['value']) / float(price_per_unit)
-        got = f"{got_value} {output_symbol}"
+            price_per_unit, output_symbol = self.get_token(output_log['address'])
+            got_value = float(output_log['args']['value']) / float(price_per_unit)
+            got = f"{got_value} {output_symbol}"
 
-        fee_wei = tx_data['gasUsed'] * tx_data['effectiveGasPrice']
-        fee = self.web3.fromWei(fee_wei, 'ether')
+            fee_wei = tx_data['gasUsed'] * tx_data['effectiveGasPrice']
+            fee = self.web3.fromWei(fee_wei, 'ether')
 
-        data = {
-            "trade": trade,
-            "spent": spent,
-            "got": got,
-            "fee": fee,
-            "position": "New",
-            "market-cap": ""   
-        }
-        return data
+            data = {
+                "trade": trade,
+                "spent": spent,
+                "got": got,
+                "fee": fee,
+                "position": "New",
+                "market-cap": ""   
+            }
+            return data
+
 
     
         
