@@ -71,9 +71,9 @@ class APISource:
             f"https://api.coingecko.com/api/v3/coins/ethereum/contract/{address}",
         ).json()
         price_eth = result['market_data']['current_price']['eth']
-        symbol = result['name']
+        symbol = result['symbol']
 
-        return price_eth, symbol
+        return price_eth, symbol.upper()
 
 
     def fetch_data(self, tx:str):
@@ -113,7 +113,8 @@ class APISource:
 
         elif output_log != {} and input_log == {}:
             input_log['address'] = self.address
-            input_log['args']['tokens'] = output_log['args']['tokens']          
+            input_log['args']['tokens'] = output_log['args']['tokens']
+         
 
         elif output_log == {} or input_log == {}:
             return None
@@ -144,7 +145,7 @@ class APISource:
                 "trade": trade,
                 "spent": spent,
                 "got": got,
-                "fee": fee,
+                "fee": f"{fee} Eth",
                 "position": "New",
                 "market-cap": ""   
             }
