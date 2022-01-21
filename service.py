@@ -109,10 +109,12 @@ class APISource:
 
         if output_log == {} and input_log != {}:
             output_log['address'] = self.address
+            output_log['args'] = {}
             output_log['args']['tokens'] = input_log['args']['tokens']
 
         elif output_log != {} and input_log == {}:
             input_log['address'] = self.address
+            input_log['args'] = {}
             input_log['args']['tokens'] = output_log['args']['tokens']
          
 
